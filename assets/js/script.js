@@ -15,7 +15,7 @@ const btnMenu = document.querySelector(".btn-menu");
 const menuNav = document.querySelector(".menu--nav__container");
 
 function toggleMenu(event) {
-  if (event.type === "touchstart") event.preventDefault();
+  if (event.type === "touch") event.preventDefault();
   menuNav.classList.toggle("active");
   const active = menuNav.classList.contains("active");
   event.currentTarget.setAttribute("aria-expanded", active);
@@ -27,7 +27,7 @@ function toggleMenu(event) {
 }
 
 btnMenu.addEventListener("click", toggleMenu);
-btnMenu.addEventListener("touchstart", toggleMenu);
+btnMenu.addEventListener("touch", toggleMenu);
 
 const menuItem = document.querySelectorAll(".menu--nav__item");
 
@@ -35,7 +35,7 @@ menuItem.forEach((item) => {
   item.addEventListener("click", function () {
     menuNav.classList.toggle("active");
   });
-  item.addEventListener("touchstart", function (event) {
+  item.addEventListener("touch", function (event) {
     event.preventDefault();
     menuNav.classList.toggle("active");
   });
