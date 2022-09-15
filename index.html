@@ -14,7 +14,7 @@
 <body>
     <header class="header--container">
         <div class="header--content">
-            <a href="#about">
+            <a href="#">
                 <div class="logo--header">Portfó<span>lio</span></div>
             </a>
 
@@ -28,7 +28,7 @@
                     <li class="menu--nav__item"> <a href="#about">Sobre Mim</a></li>
                     <li class="menu--nav__item"> <a href="#projects">Projetos</a></li>
                     <li class="menu--nav__item"> <a href="#skills">Habilidades</a></li>
-                    <li class="menu--nav__item"> <a href="#contact">Contatos</a></li>
+                    <li class="menu--nav__item"> <a href="#contact">Contato</a></li>
                 </ul>
             </nav>
 
@@ -209,7 +209,7 @@
     <!--------------------------------- Contactas ----------------------------------->
 
     <section id='contact' class='contacts--section'>
-        <h1 id='title--section'>Contatos</h1>
+        <h1 id='title--section'>Contato</h1>
         <div class='contacts--container'>
             <div class='social--container'>
                 <figure>
@@ -222,13 +222,13 @@
             </div>
             <div class='form--container'>
                 <h3>Deixe seu recado.</h3>
-                <form class='form--content' action="">
+                <form class='form--content' action="https://formsubmit.co/8904787001be14ac8fcb21f373ef6ced" method="POST">
                     <label for="name">Nome:</label>
-                    <input type="text" id='name' required>
+                    <input type="text" id='name' name='name' required>
                     <label for="email">Email:</label>
-                    <input type="email" id='email' required>
-                    <label for="phone">Telefone:</label>
-                    <input type="tel" id='phone' placeholder='opcional'>
+                    <input type="email" id='email' name='email' required>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id='tel' name='tel' placeholder='opcional'>
                     <label for="message">Mensagem:</label>
                     <textarea name="message" id="message" rows="6" cols='40'></textarea>
                     <button type='submit'>Enviar</button>
