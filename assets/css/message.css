@@ -6,7 +6,9 @@ body {
   align-items: center;
 }
 .message--container {
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .message--content {
   color: var(--color-white);
@@ -15,6 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 40px;
+  text-align: center;
 }
 .message--content h1 {
   font-size: 2rem;
@@ -40,3 +44,17 @@ body {
   max-width: 450px;
   margin: 40px 0px;
 }
+@media only screen and (max-width: 600px) {
+  .message--content h1 {
+    font-size: 1.5rem;
+  }
+  .message--content p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .message--content a {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 5px 15px;
+  }
+} ;
