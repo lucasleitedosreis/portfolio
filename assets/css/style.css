@@ -221,7 +221,7 @@ body {
 /*============================================================about======================================================*/
 .about--container {
   max-width: 1280px;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -231,7 +231,8 @@ body {
 }
 .about--container__content {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 250px;
+  margin-bottom: 100px;
   display: flex;
   gap: 80px;
   align-items: center;
@@ -343,7 +344,7 @@ body {
 }
 /*=========end about-image========*/
 /*============================================================scroll-btn======================================================*/
-#scroll--btn {
+/* #scroll--btn {
   position: relative;
   display: block;
   width: 25px;
@@ -391,7 +392,7 @@ body {
 }
 #scroll--btn:hover::after {
   opacity: 1;
-}
+} */
 /*=========end scroll-btn========*/
 
 /*=========end about========*/
@@ -717,11 +718,11 @@ footer div {
   justify-content: space-around;
 }
 
-/*============================================================media queries======================================================*/
-@media only screen and (max-width: 1400px) {
+/*============================================================media queries 1400px======================================================*/
+@media only screen and (max-width: 1440px) {
   .about--container__content {
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 230px;
   }
   .about--content__presentation p:nth-child(1) {
     font-size: 4.5rem;
@@ -754,7 +755,7 @@ footer div {
     margin-top: 10px;
   }
 }
-/*============================================================media 980px queries======================================================*/
+/*============================================================media queries 980px======================================================*/
 @media only screen and (max-width: 980px) {
   /*===================================================about--container======================================================*/
   .about--container {
