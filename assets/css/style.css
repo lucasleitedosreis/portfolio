@@ -664,7 +664,7 @@ body {
 }
 .form--content input {
   width: 100%;
-  min-width: 350px;
+  min-width: 250px;
   height: 40px;
   font-size: 1.125rem;
   outline: none;
@@ -674,7 +674,7 @@ body {
 }
 .form--content textarea {
   width: 100%;
-  min-width: 350px;
+  min-width: 250px;
   font-size: 1.125rem;
   resize: none;
   outline: none;
@@ -695,6 +695,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
   margin-bottom: 80px;
+  border: none;
 }
 .form--content button:hover,
 .form--content button:focus {
@@ -704,18 +705,29 @@ body {
 
 footer {
   width: 100%;
-  height: 40px;
+  height: auto;
   background: var(--color-secondary-purple);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 20px;
 }
 footer div {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
+  height: 60px;
   color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+footer div h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+footer div p {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 /*============================================================media queries 1400px======================================================*/
@@ -763,6 +775,7 @@ footer div {
   }
   .about--container__content {
     margin-top: 150px;
+    margin-bottom: 10px;
     flex-direction: column-reverse;
   }
   .about--content__presentation p:nth-child(1) {
@@ -834,8 +847,8 @@ footer div {
   }
 }
 @media only screen and (max-width: 600px) {
-  .about--container {
-    height: auto;
+  .about--container__content {
+    margin-bottom: 10px;
   }
   .about--content__presentation p:nth-child(1) {
     margin-top: 20px;
@@ -871,5 +884,9 @@ footer div {
   .card--wrapp__img {
     width: 250px;
     padding: 15px 15px 5px 15px;
+  }
+  .social--content a {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
