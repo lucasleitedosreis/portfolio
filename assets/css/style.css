@@ -39,8 +39,8 @@ body {
   background: var(--color-background-primary);
 }
 
-/*=========section title========*/
-
+/*=========estilos gerais========*/
+/*=========title========*/
 #title--section {
   position: relative;
   font-size: 2.25rem;
@@ -164,6 +164,7 @@ body {
     width: 30px;
     color: var(--color-primary-purple);
     border-top: 3px solid var(--color-primary-purple);
+    z-index: 2000;
   }
   .hamburguer::after,
   .hamburguer::before {
@@ -188,7 +189,6 @@ body {
   }
 
   .menu--nav__content {
-    /* display: block; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,9 +196,8 @@ body {
     position: absolute;
     width: 100%;
     height: 0;
-    top: 80px;
+    top: 0px;
     right: 0px;
-    /* background: var(--color-secondary-purple); */
     background: #161616;
     visibility: hidden;
     overflow-y: hidden;
@@ -208,7 +207,7 @@ body {
   .menu--nav__container.active .menu--nav__content {
     visibility: visible;
     overflow-y: auto;
-    height: calc(100vh - 80px);
+    height: 100vh;
   }
   .menu--nav__item a {
     font-size: 2rem;
