@@ -39,7 +39,8 @@ body {
   background: var(--color-background-primary);
 }
 
-/*=========estilos gerais========*/
+/*======================================================general styles======================================================*/
+
 /*=========title========*/
 #title--section {
   position: relative;
@@ -68,8 +69,21 @@ body {
   color: var(--color-primary-purple);
 }
 /*=========end section title========*/
+/*=========anime scroll========*/
+[data-anime] {
+  opacity: 0;
+  transition: 2s;
+  transform: translate3d(0px, -50px, 0px);
+}
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+/*=========end anime scroll========*/
 
-/*============================================================scroll style======================================================*/
+/*======================================================end general styles======================================================*/
+
+/*======================================================scroll style======================================================*/
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
