@@ -1,3 +1,4 @@
+// ===================================debounce usado no anime scroll====================================
 const debounce = function (func, wait, immediate) {
   let timeout;
   return function (...args) {
@@ -12,6 +13,30 @@ const debounce = function (func, wait, immediate) {
     if (callNow) func.apply(context, args);
   };
 };
+// =======================================anime scroll================================
+const target = document.querySelectorAll("[data-anime]");
+const animationClass = "animate";
+
+function animeScroll() {
+  const windowTop = window.pageYOffset + window.innerHeight * 0.75;
+  target.forEach((element) => {
+    if (windowTop > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  });
+}
+animeScroll();
+
+if (target.length) {
+  window.addEventListener(
+    "scroll",
+    debounce(function () {
+      animeScroll();
+    }, 150),
+  );
+}
 // Adiciona background ao header
 // ===================================background header====================================
 
@@ -57,28 +82,21 @@ menuItem.forEach((item) => {
   });
 });
 
-// =======================================anime scroll================================
-const target = document.querySelectorAll("[data-anime]");
-const animationClass = "animate";
+// =======================================active list skills responsivo================================
+const viewMore = document.querySelectorAll(".view--more");
 
-function animeScroll() {
-  const windowTop = window.pageYOffset + window.innerHeight * 0.75;
-  target.forEach((element) => {
-    if (windowTop > element.offsetTop) {
-      element.classList.add(animationClass);
-    } else {
-      element.classList.remove(animationClass);
-    }
-  });
+function showList() {
+  this.previousElementSibling.classList.toggle("active");
+  this.classList.toggle("active");
+  if (this.innerText === "Ver mais") {
+    this.innerText = "Ver menos";
+  } else {
+    this.innerText = "Ver mais";
+  }
 }
-animeScroll();
 
-if (target.length) {
-  window.addEventListener(
-    "scroll",
-    debounce(function () {
-      animeScroll();
-      console.log("teste");
-    }, 150),
-  );
+if (viewMore.length) {
+  viewMore.forEach((view) => {
+    view.addEventListener("click", showList);
+  });
 }
