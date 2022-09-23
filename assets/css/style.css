@@ -492,19 +492,19 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 100px;
-  margin-bottom: 180px;
+  margin-top: 180px;
 }
 
 .skill-content {
   position: relative;
   min-width: 300px;
   max-height: 500px;
-  border-bottom: solid 5px var(--color-secondary-purple);
+  /* border-bottom: solid 5px var(--color-secondary-purple); */
   -webkit-box-shadow: 0px 20px 21px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 20px 21px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 20px 21px -2px rgba(0, 0, 0, 0.75);
   border-radius: 5px 5px 0px 0px;
+  margin-bottom: 50px;
 }
 
 .skill--text {
@@ -582,7 +582,7 @@ body {
   position: relative;
   width: 100%;
   height: 12px;
-  background: #242424;
+  background: var(--color-background-secondary);
 }
 .porcent {
   position: absolute;
@@ -614,15 +614,11 @@ body {
 }
 .view--more {
   position: relative;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
   font-size: 1rem;
   font-weight: 300;
   color: var(--color-white);
-  background: #000000;
-  padding: 15px;
+  background: var(--color-secondary-purple);
+  padding: 15px 15px 15px 90px;
   cursor: pointer;
 }
 .view--more::after {
@@ -630,12 +626,11 @@ body {
   content: url("../img/arrow.svg");
   display: inline-block;
   top: 16px;
-  right: 70px;
+  right: 90px;
   transition: 0.3s;
 }
 .view--more.active::after {
   top: 8px;
-  right: 70px;
   transform: rotate(180deg);
 }
 /*=========end skills section========*/
