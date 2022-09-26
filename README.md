@@ -1,5 +1,11 @@
 <h1 align="center">Portfólio</h1>
 
+<h3>Breve descrição da minha trajetória.</h3>
+<p>Criei este portfólio para demonstrar um pouco da minha evolução com o desenvolvimento web.<br>
+Comecei meus estudos a pouco mais de 1 ano. Atualmente estou cursando Ciências da Computação, <br> 
+e faço alguns cursos focados no desenvolvimento front-end.
+</p>
+
 [Acesse meu Portfólio](https://www.google.com "Meu Portfólio")
 
 <h3>Site desenvolvido com:</h3>
