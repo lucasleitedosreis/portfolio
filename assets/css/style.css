@@ -73,7 +73,7 @@ body {
 [data-anime] {
   opacity: 0;
   transition: 2s;
-  transform: translate3d(0px, -50px, 0px);
+  transform: translate3d(0px, -30px, 0px);
 }
 [data-anime].animate {
   opacity: 1;
@@ -377,7 +377,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 60px;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .cards--wrapper {
   width: 300px;
@@ -459,9 +459,10 @@ body {
 
 .projects--content__more a {
   display: block;
-  background: var(--color-primary-purple);
   color: var(--color-white);
-  margin-top: 60px;
+  background: var(--color-primary-purple);
+  margin-top: 50px;
+  margin-bottom: 30px;
   border-radius: 5px;
   padding: 10px 30px;
   transition: 0.3s;
@@ -492,7 +493,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 180px;
+  margin-top: 120px;
 }
 
 .skill-content {
@@ -646,9 +647,7 @@ body {
   flex-direction: column;
   padding: 0px 20px;
 }
-/* .contacts--section h1 {
-  margin-top: 100px;
-} */
+
 .contacts--container {
   max-width: 1280px;
   width: 100%;
@@ -657,7 +656,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .social--container {
   display: flex;
