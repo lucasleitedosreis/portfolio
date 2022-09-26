@@ -6,7 +6,7 @@ Comecei meus estudos a pouco mais de 1 ano. Atualmente estou cursando Ciências 
 e faço alguns cursos focados no desenvolvimento front-end.
 </p>
 
-[Acesse meu Portfólio](https://www.google.com "Meu Portfólio")
+[Acesse meu Portfólio]([https://www.google.com](https://lucasleitedosreis.github.io/portfolio/) "Meu Portfólio")
 
 <h3>Site desenvolvido com:</h3>
 
